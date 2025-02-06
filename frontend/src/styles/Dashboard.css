@@ -1,0 +1,391 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E3F2FD;
+    color: #333333;
+}
+
+/* Header Styling */
+header {
+    padding: 20px; /* Increased padding */
+    background-color: #007BFF;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-bottom: 20px;
+}
+
+/* Main Title Styling */
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center navigation buttons */
+    gap: 15px;
+}
+
+.signout {
+    position: absolute;
+    top: 15px; /* Added spacing to avoid overlap */
+    right: 20px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.signout:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+.nav-link {
+    padding: 10px 100px;
+    margin: -20px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    margin-top: 10px; 
+}
+
+/* Background Box */
+.background-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 1000px;
+    max-width: 90%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Boxes */
+.dashboard-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual Boxes */
+.top-box,
+.middle-box,
+.bottom-box {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #007BFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    color: #333333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.top-box:hover,
+.middle-box:hover,
+.bottom-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.top-box {
+    width: 48%;
+    height: auto; /* Adjust height dynamically */
+}
+
+.middle-box {
+    width: 48%;
+    height: auto; /* Adjust height dynamically */
+}
+
+.bottom-box {
+    width: 95%; 
+    margin: 0 auto 20px auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Goals Section Styling */
+.bottom-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.goals-starting-weight,
+.goals-current-weight {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.goals-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.goals-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center align buttons */
+}
+
+.goals-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.goals-button:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Calendar Wrapper */
+.calendar-wrapper {
+    display: flex;
+    justify-content: center; /* Center calendar */
+    margin-top: 15px;
+}
+
+.workout-day {
+    background-color: #007BFF !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+/* General Layout */
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Title */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+  /* Modern Buttons */
+button.modern-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+button.modern-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+  
+  /* Button Variants */
+button.start-workout-button {
+    background-color: lightblue;
+    margin-left: 225px;
+    width: 500px
+}
+  
+button.start-workout-button:hover {
+    background-color: #21618c;
+}
+  
+button.finish-button {
+    background-color: lightblue;
+}
+  
+button.finish-button:hover {
+    background-color: blue;
+}
+  
+button.cancel-button {
+    background-color: lightblue;
+}
+  
+button.cancel-button:hover {
+    background-color: blue;
+}
+  
+button.add-exercise-button {
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+  
+button.add-exercise-button:hover {
+    background-color: #2874a6;
+}
+  
+button.delete-set-button {
+    background-color: lightblue;
+    margin-left: 10px;
+}
+  
+button.delete-set-button:hover {
+    background-color: blue;
+}
+
+  
+  /* Input Fields */
+.modern-input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.modern-input:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+    outline: none;
+  }
+  
+  /* Exercise Item Styling */
+.exercise-item {
+    width: 100%;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+.exercise-item h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+  
+  /* Notes Section */
+.notes-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Workout History */
+.workout-history-item {
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.workout-history-item p {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.log-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 3px; /* Space between buttons */
+    cursor: pointer;
+}
+
+.log-button:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+.goals-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: white;
+    color: #333333;
+    width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.goals-input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
